@@ -1,0 +1,418 @@
+/*--CASCADING STYLE SHEET--*/
+
+/*--CSS RESET--*/
+body, p, h1, h2, h3, h4, h5, h6, nav, id{
+    padding: 0px;
+    margin: 0px;
+}
+/*--START OF BODY--*/
+body {
+    
+}
+.container-fluid {
+    margin-top: 60px;
+}
+/*--START OF HEADER--*/
+header {
+    height: 60px;
+    background-color: #333;
+    border: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 11;
+    box-shadow: 0px 60px 20px white;
+}
+.mainLogo {
+    width: 75px;
+    margin-left: 40px;
+    border-radius: 10px;
+    z-index: 11;
+}
+h2.websiteTitle {
+    float: right;
+    z-index: 15px;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    font-variant-caps: all-petite-caps;
+    font-size: 18px;
+    margin-right: 20px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+/*--START OF NAVIGATION--*/
+
+/*--START OF DESKTOP NAV--*/
+nav ul.myMenu {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color:#333;
+    width: 100%;
+    clear:both;
+    position: fixed;
+    top: 0px;
+    margin-top: 55px;
+    border-top: none;
+    z-index: 10;
+    
+    
+    
+}
+nav ul.myMenu li {
+    width: 100px;
+    display: inline-block;
+}
+nav ul.myMenu li a {
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 20px 0px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    font-variant-caps: all-petite-caps;
+    font-size: 18px;
+    z-index: 10;
+    
+}
+
+
+nav ul.myMenu li a.active {
+        color: 	#6BACE4;
+        border-bottom: solid 5px #6BACE4;
+    }
+@media screen and (min-width: 601px) {
+    nav ul.myMenu li a:hover {
+    opacity: .7;
+    border-bottom: solid 5px #555;
+    }
+}
+
+
+
+
+
+/*--END OF DESKTOP NAV--*/
+/*--START OF PHONE NAV--*/
+@media screen and (max-width: 600px) {
+    
+    nav ul.myMenu {
+        margin-top: 0px;
+        background-color: #222;
+        position: fixed;
+        top: 120px;
+        width: 160px;
+        box-shadow: 0px 0px 45px 0px #222;
+        opacity: .9;
+        display: none;
+        
+
+    }
+    nav ul.myMenu li {
+        display: block;
+        margin-left: 5px;
+        width: 155px;
+        
+    }
+    nav ul.myMenu li a {
+        text-align: left;
+        font-size: 24pt;
+        letter-spacing: 0px;
+        padding-left: 4px;
+        line-height: 10px;
+    }
+    /*--MENU BUTTON--*/
+    .nav-btn {
+        padding-right: 2%;
+        padding-left: 60px;
+        display: block;
+        font-size: 35px;
+        text-align: left;
+        color: white;
+        width: 100%;
+        background-color: #333;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+        height: 60px;
+        line-height: 60px;
+    }
+    .nav-btn:before {
+        content: "☰";
+        
+        
+    }
+    
+}
+
+/*--END OF PHONE NAV--*/
+/*--END OF NAVIGATION
+/*--END OF HEADER--*/
+
+/*--START OF MAIN CONTENT--*/
+
+
+.BGImage {
+    
+    position: absolute;
+    top: 120px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: -5;
+    min-width: 500px;
+    
+}
+.developer {
+    font-size: 100px;
+    color: #222;
+    opacity: .9;
+    text-align: center;
+    margin-top: 200px;
+    padding-bottom: 4%;
+}
+@media screen and (max-width: 600px) {
+    .developer {
+        font-size: 60px;
+        margin-top: 170px;
+        padding-bottom: 1%;
+    }
+}
+   
+    .container-fluid .myText h2{
+        padding-left: 4%;
+    }
+    .container-fluid .myText h3 {
+        padding-left: 10%;
+    }
+    .container-fluid .myText p {
+        padding-left: 10%;
+    }
+    .myContentBox {
+    margin-top: 80px;
+    }
+    .container-fluid h2 {
+        color: #333;
+        opacity: .9;
+        font-size: 40px;
+        padding-bottom: 8px;
+        border-bottom: 3px solid #6788A7;
+
+    }
+    
+}
+
+
+/*--From Desktop to phone changes--*/
+
+
+@media screen and (max-width: 600px){
+    
+    
+    .container-fluid h1.developer {
+        font-size: 5;
+    }
+    
+    .myContentBox {
+    margin-top: 40px;
+    }
+    
+    
+}
+.container-fluid p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    line-height: 60px;
+}
+.container-fluid p a {
+    font-variant-caps: all-petite-caps;
+    color: #6990C0;
+    
+}
+.container-fluid p a:hover {
+    text-decoration: none;
+    opacity: .6;
+    
+}
+.container-fluid .myButton {
+    text-align: center;
+    padding: 2px 20px 6px 20px;
+    font-size: 24px;
+    border: solid 6px #6990C0;
+}
+
+
+/*--myButton color changes w/screen size--*/
+@media screen and (max-width: 775px){
+    .container-fluid p a {
+    color: white;
+}
+    .container-fluid .myButton {
+        border: solid 6px white;
+    }
+}
+.myProjects {
+    width: 80%;
+    height: 800px;
+    margin-left: 10%;
+    margin-bottom: 60px;
+    margin-top: 25px;
+    padding: 10px;
+    box-shadow: 0px 0px 40px 5px #222;
+    resize: both;
+    overflow: auto;
+    
+}
+.myText p {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    padding-bottom: 30px;
+    color: black;
+    text-shadow: 0px 0px 50px white;
+}
+.myText h3 {
+    text-shadow: 0px 0px 50px white;
+}
+.myText a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 10%;
+    padding: 5px 5%;
+    box-shadow: 0px 0px 8px  1px #333;
+    background-color: rgba(0,0,0, .2);
+
+}
+.myText a:hover {
+    text-decoration: none;
+    opacity: .6;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    .myProjects {
+        margin-left: 2%;
+        width: 88%;
+    }
+    .myProjects h3 {
+        margin-left: 2%;
+    }
+    .myProjects p {
+        margin-left: 2%;
+    }
+    .myProjects a {
+        font-size: 14px;
+        line-height: 14px;
+        margin-left: 2%;
+        padding: 15px 50px;
+        
+    }
+}
+
+.container-fluid {
+    padding-bottom: 150px;
+}
+
+/*--Start of Message Form--*/
+.myInput {
+    width: 50%;
+    margin-left: 10%;
+}
+form {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #e4e4e4;
+    padding: 25px 0px;
+    
+}
+form label {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+form label input.myInput {
+    
+    width: 80%;
+    border: none;
+    color: #6BACE4;
+    background-color: white;
+    border-radius: 0px;
+    height: 34px;
+    padding-left: 3%;
+    line-height: 30px;
+    box-sizing: 80%;
+    
+    }
+
+form label input.mySubmit {
+    width: 30%;
+    background-color: #6BACE4; 
+    padding: 10px; 
+    margin-left: 10%;
+    margin-top: 40px;
+    height: 50px;
+    font-size: 20px;
+    font-variant-caps: all-petite-caps;
+    border-style: none;
+    color: white;
+}
+
+form label input.mySubmit:hover {
+    opacity: .7;
+}
+
+form label input.messageInput {
+padding-bottom: 75px;
+}
+/*--END OF MAIN CONTENT--*/
+/*--END OF BODY--*/
+
+
+
+/*--START OF FOOTER--*/
+footer {
+    background-color: #222;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    box-shadow: 0 -10px 40px white;
+    opacity: .9;
+    height: 35px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.footerDiv {
+    margin: 4px 5%;
+    
+}
+.footerImage {
+    width: 30px;
+    border-radius: 6px;
+    margin-left: 1%;
+}
+.footerImage:hover {
+    opacity: .6;
+}
+/*--END OF FOOTER--*/
+
+/*--END OF CASCADING STYLE SHEET--*/

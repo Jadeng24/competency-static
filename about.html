@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--START OF HTML-->
+<html>
+
+<!--START OF HEAD-->
+
+<head>
+
+    <!--TITLE OF PAGE-->
+    <title>About | Goodwin Development Inc.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!--FONT FAMILIES-->
+
+</head>
+<!--END OF HEAD-->
+
+<!--START OF BODY-->
+
+<body>
+    <!--START OF HEADER-->
+    <header>
+        <a href="index.html">
+            <img src="images/gdi.png" class="mainLogo">
+        </a>
+        <h2 class="websiteTitle">goodwin development inc.</h2>
+        <!--START OF NAVIGATION-->
+        <nav>
+            <span class="nav-btn"></span>
+            <ul class="myMenu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li>
+                    <a href="about.html" class="active">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!--END OF NAVIGATION-->
+
+    </header>
+    <!--END OF HEADER-->
+    <!--START OF MAIN CONTENT-->
+    <!--START OF CONTAINER-fluid-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 push-md-1 myContentBox myText">
+                <h2>About</h2>
+                <br>
+                <h3>Hello, I am Jaden Goodwin.</h3>
+            </div>
+            <!--END OF COL-10-->
+        </div>
+        <!--END OF ROW-->
+    </div>
+    <!--END OF CONTAINER-fluid-->
+
+
+    <!--END OF MAIN CONTENT-->
+    <!--START OF FOOTER-->
+    <footer>
+        <div class="footerDiv">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <p class="footerContent">&copy; 2017 GOODWIN DEVELOPMENT INC. &#9679; Developed by Jaden Goodwin
+                        <a target="_blank" href="https://www.instagram.com/jaden_g24/?hl=en">
+                            <img src="images/instagram.png" class="footerImage">
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/elderjadengoodwin">
+                            <img src="images/facebook.png" class="footerImage">
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/jaden-goodwin-7475bb13a/">
+                            <img src="images/linkedin.png" class="footerImage">
+                        </a>
+                    </p>
+
+                </div>
+                <!--End of col-md-3 Div-->
+            </div>
+            <!--End of Row Div-->
+        </div>
+        <!--End of footerDiv-->
+    </footer>
+    <!--END OF FOOTER-->
+
+    <!--Jquery script-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $('span.nav-btn').click(function () {
+            $('ul.myMenu').slideToggle();
+
+        })
+
+        $(window).resize(function () {
+
+            if ($(window).width() > 600) {
+
+                $('nav ul.myMenu').removeAttr('style');
+            } s
+        })
+    </script>
+</body>
+<!--END OF BODY-->
+
+</html>
+<!--END OF HTML-->
