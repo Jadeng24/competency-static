@@ -133,13 +133,14 @@ nav ul.myMenu li a.active {
         text-align: left;
         color: white;
         width: 100%;
-        background-color: #333;
+        background-color: linear-gradient(to left, #333 50%, #555);
         position: fixed;
         top: 60px;
         left: 0;
         z-index: 10;
         height: 60px;
         line-height: 60px;
+        font-weight: 600;
     }
     .nav-btn:before {
         content: "☰";
